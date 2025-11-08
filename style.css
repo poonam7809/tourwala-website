@@ -1,0 +1,1256 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+}
+
+.top-bar a {
+    color: #fff;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.top-bar a:hover {
+    color: #00aaff;
+}
+
+/* Navbar */
+.navbar-brand {
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #000 !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+.btn-primary {
+    background-color: #00aaff;
+    border: none;
+}
+
+.btn-info {
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 90vh;
+    background: url('https://thetourwala.com/wp-content/uploads/2024/10/WhatsApp-Image-2024-04-06-at-113310_enhanced.jpg') center/cover no-repeat;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-section .content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+
+
+
+/* Destination Section */
+.destination-section {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1542349314-b0ceb4d90f2d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2xvdWRzfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000') center/cover no-repeat;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    color: #000;
+    overflow: hidden;
+}
+
+.destination-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+.destination-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.destination-section h2 {
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+/* Right Image */
+.image-box {
+    border: 3px solid #000;
+    padding: 5px;
+    background-color: #fff;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-box:hover {
+    transform: scale(1.03);
+}
+
+/* Explore Section */
+.explore-section {
+    background-color: #0077b6;
+    padding: 50px 20px;
+}
+
+.explore-section h2 {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+
+
+/* Background for Section */
+.popular-section {
+    background: linear-gradient(180deg, #0275b1, #0096d6);
+    min-height: 100vh;
+}
+
+/* Card Styling */
+.destination-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-8px);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.rating {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.text-warning {
+    letter-spacing: 2px;
+}
+
+/* Button */
+.btn-outline-light {
+    border: 2px solid #fff;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #0275b1;
+}
+
+.about-section {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 10%;
+    background: #fff;
+}
+
+.wave-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(to bottom, #0099cc 40%, #ffffff 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+}
+
+.about-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+.about-left img {
+    width: 600px;
+    max-width: 100%;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.about-right {
+    flex: 1;
+    min-width: 320px;
+}
+
+.about-right h4 {
+    color: #0099cc;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-right h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.about-right p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.features li {
+    font-size: 15px;
+    color: #333;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.features i {
+    color: #00aaff;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.stats {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.stats div h2 {
+    color: #0099cc;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.stats div p {
+    color: #444;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 80%;
+    height: 50%;
+    margin-left: 150px;
+    
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-family: "Brush Script MT", cursive;
+    font-size: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Tourwala Info Section */
+.tourwala-info {
+    padding: 0px 10%;
+    background-color: #fff;
+}
+
+.tourwala-info .container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.tourwala-info h1 {
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.tourwala-info p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: justify;
+}
+
+/* Dropcap Style */
+.dropcap {
+    font-size: 3rem;
+    font-weight: bold;
+    float: left;
+    line-height: 1;
+    margin-right: 8px;
+    color: #0099cc;
+}
+
+em {
+    font-style: italic;
+    color: #444;
+    font-weight: 500;
+}
+
+strong {
+    color: #0077b6;
+    font-weight: 600;
+}
+
+
+.testimonial-section {
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 40px 20px;
+    position: relative;
+    background: rgba(15,60,70,0.95);
+    overflow: hidden;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    opacity: 0.45;
+    background-image: url('https://thetourwala.com/wp-content/uploads/2023/09/h1-parallax-img-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.testimonial-header {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    margin-bottom: 36px;
+}
+
+.testimonial-header h4 {
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+}
+
+.stars {
+    color: gold;
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+
+.testimonial-header h2 {
+    color: #d5e8ec;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    z-index: 1;
+}
+
+.testimonial-item {
+    background: rgba(255,255,255,0.13);
+    border-radius: 35px;
+    padding: 36px 22px 16px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 2px 22px rgb(0 0 0 / 13%);
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.testimonial-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #7fdfff;
+    box-shadow: 0 2px 12px rgb(25 185 255 / 22%);
+    margin-bottom: 18px;
+    background: #fff;
+}
+
+.testimonial-text {
+    font-size: 15px;
+    color: white;
+    min-height: 80px;
+    margin-bottom: 22px;
+    font-style: italic;
+}
+
+.testimonial-name {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.04rem;
+    margin-bottom: 7px;
+}
+
+.testimonial-desc {
+    color: white;
+    font-size: 0.96rem;
+    margin-bottom: 5px;
+}
+
+.carousel-dots {
+    text-align: center;
+    margin-top: 28px;
+    z-index: 2;
+    position: relative;
+}
+
+.dot {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin: 0 4px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.dot.active {
+    background: white;
+    opacity: 1;
+}
+
+
+
+.blog-section {
+    position: relative;
+    padding: 60px 0 40px 0;
+    background: #fff;
+    overflow: hidden;
+    margin: auto;
+}
+
+.blog-wave {
+    position: absolute;
+    top: -10px; left: 0; right: 0;
+    height: 100px;
+    background: url('data:image/svg+xml;utf8,<svg width="100%" height="100" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 44.099C0 44.099 381.414 109.228 720 80.099C1058.59 50.9702 1440 80.099 1440 80.099V0H0V44.099Z" fill="white"/></svg>') no-repeat center top;
+    background-size: cover;
+    z-index: 1;
+}
+
+.blog-title {
+    font-size: 2.3rem;
+    font-family: inherit;
+    color: #42c5fc;
+    font-weight: bold;
+    margin: 30px 0 32px 60px;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+    margin-left: 15px;
+}
+
+.blog-list {
+    flex: 2;
+    padding-right: 30px;
+}
+
+.blog-entry {
+    margin-bottom: 38px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #efefef;
+}
+
+.blog-heading {
+    font-size: 1.34rem;
+    font-weight: 500;
+    color: #161616;
+    margin-bottom: 8px;
+}
+
+.blog-subtitle {
+    font-size: 1.09rem;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.blog-author {
+    font-size: 0.97rem;
+    color: #525252;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.blog-desc {
+    font-size: 0.99rem;
+    color: #303033;
+    margin-bottom: 0px;
+}
+
+.blog-images {
+    flex: 1;
+    position: relative;
+    margin-top: 4px;
+    margin-right: 28px;
+}
+
+.polaroid {
+    position: absolute;
+    padding: 10px 10px 18px 10px;
+    border-radius: 7px;
+    width: 350px;
+    transform: rotate(-14deg);
+}
+
+.polaroid img {
+    width: 350px;
+    display: block;
+}
+
+.polaroid.one {
+    top: 8px; right: 28px;
+    z-index: 2;
+}
+
+.polaroid.two {
+    top: 90px; right: -10px;
+    z-index: 1;
+    transform: rotate(7deg);
+}
+
+.blog-pagination {
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 8px;
+    font-size: 1.09rem;
+    color: #bbb;
+    letter-spacing: 4px;
+}
+
+.blog-button {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.blog-button button {
+    background: #43beec;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    padding: 13px 44px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 13px rgba(89,175,232,0.18);
+}
+
+.blog-button button:hover {
+    background: #1172b6;
+}
+
+
+.tour-section {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: #fcfcfc;
+    padding: 60px 30px 40px 30px;
+}
+
+.tour-header .subtitle {
+    color: #48c5fb;
+    font-size: 1.35rem;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tour-header .title {
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-bottom: 14px;
+    color: #181818;
+}
+
+.tour-header .motto {
+    font-size: 1.27rem;
+    margin-bottom: 38px;
+    color: #171717;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+
+.tour-circles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 65px;
+    margin-bottom: 36px;
+}
+
+.circle-img {
+    width: 330px;
+    height: 330px;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 23px rgba(20, 60, 90, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s;
+}
+
+.circle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.circle-img:hover {
+    box-shadow: 0 8px 32px rgba(0, 110, 210, 0.13);
+}
+
+.circle-img:hover img {
+    transform: scale(1.04);
+}
+
+.tour-btn {
+    margin-top: 15px;
+}
+.tour-btn button {
+    font-size: 1.15rem;
+    background: #44adeb;
+    color: #fff;
+    padding: 14px 42px;
+    border-radius: 9px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 15px rgba(70,200,255,0.14);
+}
+
+.tour-btn button:hover {
+    background: #1475ac;
+}
+
+/* Basic Reset and Global Styles */
+
+
+.reviews-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Video Card Styles */
+.video-review-card {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Adjust width for multiple cards */
+    max-width: 450px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-review-card:hover .video-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly darker hover */
+}
+
+.video-thumbnail {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.video-overlay p {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    margin-bottom: 15px;
+}
+
+.play-button {
+    background: red;
+    border: none;
+    color: white;
+    font-size: 3em;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: darkred;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px; /* Max size for the video player */
+    background-color: #000;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.close-button {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it's above the video */
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 0 10px;
+}
+
+.close-button:hover {
+    color: #bbb;
+}
+
+/* Responsive Video Embed (16:9 aspect ratio) */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+h1, h2, h3 {
+    margin: 0 0 10px 0;
+}
+
+/* --- 1. Video Reviews Section (Hero) --- */
+.reviews-hero-section {
+    position: relative;
+    height: 100vh; /* Adjust as needed */
+    background: url('https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/6d/92/e7.jpg') no-repeat center center/cover; /* Replace with your actual image */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    padding: 40px 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagline {
+    font-size: 0.9em;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.reviews-hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* Video Card/Thumbnail Styles */
+.video-review-card {
+    cursor: pointer;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-placeholder {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Lighter overlay on thumbnail */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.video-overlay p {
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    margin-bottom: 15px;
+}
+
+.play-button {
+    background: red;
+    border: none;
+    color: white;
+    font-size: 3em;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* --- Modal Styles --- */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.close-button {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* --- 2. Contact/Info Section --- */
+.contact-info-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.contact-info-section h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 40px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.info-group {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    /* Styles for the groups to match the white background of the image */
+}
+
+/* Support & Timings */
+.support-timing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 1 / 2;
+    background: #f9f9f9;
+}
+
+.info-item {
+    text-align: center;
+    padding: 10px;
+}
+
+.icon {
+    font-size: 2em;
+    color: #4CAF50; /* Green/Teal color */
+    margin-bottom: 5px;
+}
+
+.label {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.detail {
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* Call Card */
+.call-card {
+    grid-column: 2 / 3;
+    background: url('https://thetourwala.com/wp-content/uploads/2023/09/flat-lay-travel-essentials-with-sunglasses-money-scaled.jpg') no-repeat center center/cover; /* Placeholder image */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.call-card .phone-number {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Open Hours & Address */
+.details-footer {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.open-hours-card {
+    flex: 1;
+    background: url('https://thetourwala.com/wp-content/uploads/2023/09/felix-rostig-UmV2wr-Vbq8-unsplash-scaled.jpg') no-repeat center center/cover; /* Placeholder image */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    }
+
+.open-hours-card .schedule, .open-hours-card .time-range {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.address-details {
+    flex: 1;
+    text-align: left;
+    width: 280px;
+    padding: 20px;
+}
+
+/* Reach Us / Social */
+.reach-us {
+    grid-column: 2 / 3;
+    
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    width: 250px;
+    
+}
+
+.reach-us p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    align-items: center;
+    margin-top: 15px;
+}
+
+.social-icons .logo {
+    height: 40px; /* Adjust size */
+    margin-right: 15px;
+}
+
+.social-icons a i {
+    font-size: 1.5em;
+    color: #3b5998; /* Default color */
+}
+
+.social-icons a:nth-child(2) i { color: #E4405F; } /* Instagram */
+.social-icons a:nth-child(3) i { color: #3b5998; } /* Facebook */
+.social-icons a:nth-child(4) i { color: #00acee; } /* Twitter */
+.social-icons a:nth-child(5) i { color: #FF0000; } /* YouTube */
+
+
+/* --- 3. Footer Section --- */
+.main-footer {
+    background: url('footer-airplane-bg.jpg') no-repeat center center/cover; /* Placeholder image */
+    background-color: #113355; /* Dark color approximation */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .destination-section h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .image-box {
+        margin-top: 20px;
+    }
+
+    .destination-card img {
+        height: 180px;
+    }
+
+    .popular-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .tourwala-info {
+        padding: 50px 5%;
+    }
+
+    .tourwala-info h1 {
+        font-size: 1.4rem;
+    }
+
+    .dropcap {
+        font-size: 2.4rem;
+    }
+    .testimonial-carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial-item {
+        width: 98vw;
+        margin-bottom: 18px;
+    }
+    .blog-content {
+        flex-direction: column;
+    }
+    .blog-images {
+        position: static;
+        margin: 35px auto 0 auto;
+        min-width: 130px;
+        max-width: 250px;
+        height: 230px;
+    }
+    .polaroid {
+        position: absolute;
+        width: 130px;
+        padding: 6px 6px 14px 6px;
+    }
+    .polaroid.one { top:0; right:18px;}
+    .polaroid.two { top:60px; right:-10px;}
+
+    .tour-circles { gap: 32px; }
+    .circle-img { width: 220px; height: 220px; }
+
+    .tour-circles {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .tour-header .title { font-size: 2rem; }
+    .circle-img { width: 180px; height: 180px; }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .support-timing {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .info-item {
+        text-align: left;
+    }
+    .call-card, .details-footer, .reach-us {
+        grid-column: 1 / -1; /* Full width */
+    }
+    .details-footer {
+        flex-direction: column;
+    }
+}
+
+
+/* Footer */
+footer {
+    font-size: 14px;
+}
